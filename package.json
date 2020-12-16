@@ -1,0 +1,23 @@
+{
+  "name": "geological_tactile_image_repository",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geo4lib/geo4libcamp-website.git"
+  },
+  "private": true,
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com"
+  },
+  "homepage": "https://github.com",
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  }
+}
