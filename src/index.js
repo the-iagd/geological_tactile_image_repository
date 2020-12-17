@@ -18,9 +18,15 @@ jQuery('#searchForm').on('submit', function(e) {
     const $el = jQuery(value);
     const id = $el.attr('id');
     if (resultIds.includes(id)) {
-      $el.show();
+      $el.show(400);
     } else {
-      $el.hide();
+      $el.hide(400);
     }
+    let suffix = 'result'
+    if (resultIds.length !== 1) {
+      suffix += 's'
+    }
+    jQuery('.result-count').text(`${resultIds.length} ${suffix}`);
+
   })
 });
