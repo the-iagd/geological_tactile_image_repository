@@ -5,6 +5,8 @@ layout: default
 
 <h1>{{ page.title }}</h1>
 
+<img class="img-thumbnail" alt="Thumbnail of {{page.title}}" src="/assets/thumbnails/{{ page.tactile_image.id }}.jpeg">
+
 <p class="lead">{{ page.description }}</p>
 {% assign search_string = page.tactile_image.id | append: '-' %}
 {% assign tactile_image_files = site.static_files | where: "tactile_image_file", true | where_exp: "item", "item.name contains search_string" %}
@@ -20,5 +22,8 @@ layout: default
       <dd>{{ metadata[1] }}</dd>
     {% endfor %}
   </dl>
-  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/assets/images/cc-by-4.svg" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
+  {% if page.tactile_image.License == 'cc-by-4' %}
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/assets/images/cc-by-4.svg" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+  {% endif %}
 </div>
