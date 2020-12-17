@@ -5,4 +5,4 @@ _site
 vendor
 node_modules
 assets/index.json
-assets/javascript/index.bundle.js
+assets/javascript/index.bundle.js*

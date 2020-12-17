@@ -6,6 +6,7 @@
   "scripts": {
     "build:index": "cat _data/tactile_images.csv | node build_index.js > assets/index.json",
     "build:js": "webpack --mode=development --progress --watch",
+    "build:js:prod": "webpack --mode=production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
