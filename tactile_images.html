@@ -2,12 +2,19 @@
 layout: default
 title: Tactile images
 ---
-<section class="jumbotron">
+<div id="hero" class="position-relative overflow-hidden p-3 p-md-5 text-center mb-3 bg-dark text-light">
+  <div class="bg-image"></div>
+  <div class="col-md-12">
+    <h1>Tactile Graphics for Geoscience Education</h1>
+    <p class="lead">
+      A digital resource collection of tactile graphics for geoscience education
+    </p>
+  </div>
   <div class=" d-flex justify-content-center">
     <form id="searchForm">
       <div class="input-group">
         <label for="searchInput" class="sr-only">search for</label>
-        <input type="text" class="form-control rounded-left" id="searchInput">
+        <input type="text" class="form-control rounded-left" id="searchInput" placeholder='Try "minerals"'>
         <span class="input-group-append">
           <button id="searchButton" class="btn btn-primary search-btn">
             <span class="submit-search-text">Search</span>
@@ -23,7 +30,9 @@ title: Tactile images
       </div>
     </form>
   </div>
-</section>
+</div>
+
+<hr>
 
 <div class="container">
   <div class="row">
