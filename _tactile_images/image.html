@@ -6,6 +6,12 @@ layout: default
 <h1>{{ page.title }}</h1>
 
 <p class="lead">{{ page.description }}</p>
+{% assign search_string = page.tactile_image.id | append: '-' %}
+{% assign tactile_image_files = site.static_files | where: "tactile_image_file", true | where_exp: "item", "item.name contains search_string" %}
+
+{% for file in tactile_image_files %}
+  <a href="{{ file.path }}" class="btn btn-primary">Download {{ file.extname | replace: '.', '' | upcase }}</a>
+{% endfor %}
 
 <div>
   <dl>

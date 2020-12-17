@@ -20,3 +20,9 @@ data_image_file: tactile_images.csv
 
 keep_files:
   - assets/javascripts/index.bundle.js
+
+defaults:
+  - scope:
+      path: "assets/tactile_image_files"
+    values:
+      tactile_image_file: true
