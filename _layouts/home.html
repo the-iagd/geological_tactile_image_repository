@@ -1,91 +1,56 @@
 ---
 layout: default
 ---
-
-<div class="home container">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-  
-  <h1>Tactile Graphics for Geoscience Education</h1>
-
-  <p class="lead">Welcome to the IAGD’s digital resource collection of tactile graphics for geoscience education.</p>
-
-  <h2>Why this resource collection?</h2>
-  <div class='my-4'>
-    Geology is a visually-stimulating science that presents significant challenges to students with visual disabilities and their instructors.  Too often, instructors of low-vision students have to create their own tactile graphics, and this usually requires a significant investment of time and effort.  This digital resource collection was designed to supply instructors with ready-made graphics that can be rapidly converted to tactile graphics using technology commonly available at their institution’s disability office.  We hope it is helpful to you!
+<div id="hero" class="position-relative overflow-hidden p-3 p-md-5 text-center mb-3 bg-dark text-light">
+  <div class="bg-image"></div>
+  <div class="col-md-12">
+    <h1>Tactile Graphics for Geoscience Education</h1>
+    <p class="lead">
+      A digital resource collection of tactile graphics for geoscience education
+    </p>
   </div>
-  
-  <h2>Who can use this resource collection?</h2>
-  <div class='my-4'>
-    This digital resource collection is freely available for the use of geoscience educators at high schools, colleges, and universities who need quick and easy access to tactile graphics illustrating a range of topics covered in introductory geoscience courses.
+  <div class=" d-flex justify-content-center">
+    <form id="searchForm">
+      <div class="input-group">
+        <label for="searchInput" class="sr-only">search for</label>
+        <input type="text" class="form-control rounded-left" id="searchInput" placeholder='Try "minerals"'>
+        <span class="input-group-append">
+          <button id="searchButton" class="btn btn-primary search-btn">
+            <span class="submit-search-text">Search</span>
+            <span class="" aria-hidden="true" aria-label="Search">
+              <svg width="24" height="24" viewBox="0 0 24 24" role="img">
+                <title>Search</title>
+                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                <path fill="currentColor" d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+              </svg>
+            </span>
+          </button>
+        </span>
+      </div>
+    </form>
   </div>
-
-  <h2>What information is included in this resource collection?</h2>
-  <div class='my-4'>
-    Each image in the collection is posted as a PowerPoint (.pptx) file (which can be modified for use) and as an Adobe Portable Document Format (.pdf) file which cannot be as easily modified.  Labels are included, both in English and in Grade 2 (contracted) Braille (24 point font).
-  </div>
-
-  <h2>Is the collection searchable?</h2>
-  <div class='my-4'>
-    Yes.  In addition to searching by text, the collection is also organized by topic (e.g., “Minerals”, “Igneous materials and processes”, “Plate Tectonics”, etc.).  Thumbnail images are also included for each file to allow easy browsing and visual search.    
-  </div>
-
-  <h2>What equipment is required to edit, print, and use these tactile images?</h2>
-  <div class='my-4'>
-    <h3>Editing the images</h3>
-    <div class='my-2'>
-      To edit the ppt images in this resource collection, the following resources will be useful:
-      <ul>
-        <li>
-          an online Braille translator, such as https://www.brailletranslator.org/ or https://www.branah.com/braille-translator.  We recommend Grade 2 (contractional Braille). 
-        </li>
-        <li>
-          <a href="https://www.tsbvi.edu/download-braille-and-asl-specialty-fonts">Swell Braille font</a> is the recommended font for tactile graphics produced by the method described below.    
-        </li>
-      </ul>
-    </div>
-    <h3>Printing the images as tactile graphics</h3>
-    <div class='my-2'>
-      The images in this resource collection must be printed out on <strong>thermal capsule (or “swell”) paper</strong> (8.5 x 11 sized paper is the best size for the images in this database).  Your institution’s disability office may have capsule paper available to use, but if they do not, here are a few vendors:
-      <ul>
-        <li>
-          http://piaf-tactile.com/tangible-magic-paper/
-        </li>
-        <li>
-          http://www.americanthermoform.com/product/swell-touch-paper/
-        </li>
-        <li>
-          https://store.humanware.com/hus/tangible-magic-capsule-paper-8-in-x-11-in-100-sheets-package.html
-        </li>
-        <li>
-          https://www.enablemart.com/swell-touch-paper
-        </li>
-        <li>
-          https://www.maxiaids.com/swell-touch-paper-85-x-11-in-100-sheets
-        </li>
-      </ul>
-      Next, the thermal capsule paper with the image on it must be passed through a machine that heats the paper to produce the raised relief.  Again, your institution’s disability office may already have one, but if they do not, here are some vendors:
-      <img class="rounded mx-auto d-block" width=400 src="{{ "/assets/images/piaf.jpeg" | relative_url }}">
-      <ul>
-        <li>
-          <a href="http://piaf-tactile.com">HARPO PIAF (“Pictures in a Flash”) printer</a> and <a href="http://piaf-tactile.com/docs/PIAF_User_Guide_and_Workbook_EN.pdf">manual</a>
-        </li>
-        <li>
-          <a href="http://www.woodlaketechnologies.com/category-s/1884.htm">Swell-Form Graphics II Machine</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <h2>Funding and Support</h2>
-  <div class='my-4'>
-    This project was funded by a <a href="https://centennial.agu.org/a-digital-resource-collection-of-tactile-graphics-for-geoscience-kent-ratajeski-university-of-kentucky-research-foundation/">grant</a> from the American Geophysical Union as part of its “Celebrate 100” grant program.
-  </div>
-
-  <h2>Contact</h2>
-  <div class='my-4'>
-    Please contact Kent Ratajeski (<a href="mailto:kent.ratajeski@uky.edu">kent.ratajeski@uky.edu</a>) or <a href="https://www.theiagd.org">the IAGD</a> for more information about this database or if you have any questions about its use.
-  </div>
-
 </div>
+
+<hr>
+
+<div class="container">
+  <div class="row">
+    {% for image in site.data.tactile_images %}
+      <div class="tactile-image col-md-4" id="{{image.uuid}}">
+        <div class="card mb-4 shadow">
+          <img class="card-img-top" loading="lazy" alt="Thumbnail of {{page.title}}" src="/assets/thumbnails/{{ image.id }}.jpeg">
+          <div class="card-body">
+            <h3 class="card-title">
+              <a class="stretched-link" href="{{ image.uuid }}">{{ image.Title }}</a>
+            </h3>
+            <p class="card-text">
+              {{ image.Tags }}
+            </p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+    </div>
+</div>
+
+<script type="text/javascript" src="/assets/javascript/index.bundle.js" charset="utf-8"></script>
