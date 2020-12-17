@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:index": "cat _data/tactile_images.csv | node build_index.js > assets/index.json",
+    "build:js": "webpack --mode=development --progress --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +22,10 @@
   "dependencies": {
     "bootstrap": "^4.4.1",
     "csv": "^5.3.2",
-    "lunr": "^2.3.9"
+    "jquery": "^3.5.1",
+    "lunr": "^2.3.9",
+    "popper.js": "^1.16.1",
+    "webpack": "^5.10.3",
+    "webpack-cli": "^4.2.0"
   }
 }

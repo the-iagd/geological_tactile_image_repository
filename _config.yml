@@ -15,3 +15,8 @@ sass:
   load_paths:
     - _sass
     - node_modules
+
+data_image_file: tactile_images.csv
+
+keep_files:
+  - assets/javascripts/index.bundle.js
