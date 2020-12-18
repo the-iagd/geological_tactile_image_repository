@@ -13,7 +13,7 @@ layout: default
     <form id="searchForm">
       <div class="input-group">
         <label for="searchInput" class="sr-only">search for</label>
-        <input type="text" aria-controls="tactileImageResults" class="form-control rounded-left" id="searchInput" placeholder='Try "minerals"'>
+        <input type="text" aria-controls="tactileImageResults" class="form-control rounded-left" id="searchInput" placeholder='Try "plate tectonics"'>
         <span class="input-group-append">
           <button id="searchButton" class="btn btn-primary search-btn">
             <span class="submit-search-text">Search</span>
@@ -38,11 +38,11 @@ layout: default
   <hr>
   <div id="tactileImageResults" class="row" aria-live="polite">
     {% for image in site.data.tactile_images %}
-      <div class="tactile-image col-md-4" id="{{image.uuid}}">
+      <div class="tactile-image col-md-3" id="{{image.uuid}}">
         <div class="card border-secondary mb-4 shadow">
-          <img class="card-img-top" loading="lazy" alt="Thumbnail of {{page.title}}" src="/assets/thumbnails/{{ image.id }}.jpeg">
+          <img class="card-img-top img-fluid" loading="lazy" alt="Thumbnail of {{page.title}}" src="/assets/thumbnails/{{ image.id }}.jpeg">
           <div class="card-body">
-            <h3 class="card-title">
+            <h3 class="card-title h4">
               <a class="stretched-link" href="/tactile_images/{{ image.uuid }}">{{ image.Title }}</a>
             </h3>
             <p class="card-text">
