@@ -1,6 +1,8 @@
 $blue: #3455db;
 $white: #fff;
 $text-muted: #2e343b;
+$breadcrumb-active-color: #2e343b;
+$breadcrumb-divider-color: $breadcrumb-active-color;
 $navbar-dark-color: rgba($white, .7) !default;
 
 @import '../node_modules/bootstrap/scss/bootstrap';
