@@ -19,4 +19,8 @@ $navbar-dark-color: rgba($white, .7) !default;
     top: 0; bottom: 0; left: 0; right: 0;
     filter:blur(0.5px) brightness(50%) sepia(50%);
   }
+
+  a {
+    color: $white;
+  }
 }
